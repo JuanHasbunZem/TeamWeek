@@ -15,13 +15,13 @@ function displayClasses(coursesPicked) {
 $(document).ready(function() {
   $("#submitcourse").click(function(event) {
     event.preventDefault();
-    $("#formOne").hide();
+    $("#catalog").hide();
     $("#submit").hide();
 
     const name = $("input#name").val();
     const age = $("input#age").val();
     const careerPicked = $("input:radio[name=career]:checked").val();
-    const electivePicked = $("input:radio[name=elective]:checked").val()$("input:checkbox[")
+    const electivePicked = $("input:radio[name=elective]:checked").val()
     const langsPicked = [];
     $("input:checkbox[name=language]:checked").each(function() {
       const pickLang = $(this).val();
