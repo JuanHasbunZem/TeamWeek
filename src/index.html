@@ -2,37 +2,45 @@
 <html lang="en-US">
 
 <head>
-  <title>Document</title>
+  <title>Tech Course Calendar</title>
   <!-- When change this title must change title in webpack.config.js plugins section and in package.json -->
 </head>
 
 <body>
-  <div id="formOne">
-    <div class="radio">
-      <label>
-        <input type="radio" name="courses" value="Intro to Programming" checked>
-          Intro to Programming
-      </label>
-    </div>
-    <div class="radio">
-      <label>
-        <input type="radio" name="courses" value="JavaScript I" checked>
-        Intro to JavaScript
-      </label>
-    </div>
+  <div class="container">
+    <h1>Welcome to Tech Course Calendar</h1>
+    <form id="catalog">
+      <div class="form-group">
+        <h3>Career</h3>
+        <div class="radio">
+          <label>
+            <input type="radio" name="career" value="Full Time full Stack">
+              Full Time Full Stack
+          </label>
+          <label>
+            <input type="radio" name="career" value="Part Time full Stack">
+              Part Time Full Stack
+          </label>
+        </div>
+        <h3>Elective</h3>
+        <div class="checkboxes">
+          <input type="checkbox" name="elective" value="intro">Introduction To Programming<br>
+          <input type="checkbox" name="elective" value="ANDS">Algorithms and Data Structures<br>
+        </div>
+        <h3>Languages</h3>
+        <div class="checkboxes">
+          <input type="checkbox" name="language" value="c++">C++<br>
+          <input type="checkbox" name="language" value="c#">C#<br>
+          <input type="checkbox" name="language" value="java">Java<br>
+          <input type="checkbox" name="language" value="javascriptOne">JavaScript I<br>
+          <input type="checkbox" name="language" value="javascriptTwo">JavaScript II+<br>
+          <input type="checkbox" name="language" value="python">Python<br>
+          <input type="checkbox" name="language" value="react">React<br>
+        </div>
+      </div>
+      <button type="submit" class="btn-primary">Confirm Current Selected Courses</button>
+    </form>
   </div>
-
-  <div id="submit">
-    <button type="button" class="btn-success" id="submitcourse">Submit Choice</button>
-  </div>
-
-  <div id="results">
-    <h1>List of your courses:</h1><br>
-    <p><span class="coursesPicked"></span></p>
-  </div>
-
-
-
 </body>
 
 </html>
