@@ -18,7 +18,16 @@ $(document).ready(function() {
     $("#formOne").hide();
     $("#submit").hide();
 
-    const coursePicked = $("input:radio[name=courses]:checked").val();
+    const name = $("input#name").val();
+    const age = $("input#age").val();
+    const careerPicked = $("input:radio[name=career]:checked").val();
+    const electivePicked = $("input:radio[name=elective]:checked").val()$("input:checkbox[")
+    const langsPicked = [];
+    $("input:checkbox[name=language]:checked").each(function() {
+      const pickLang = $(this).val();
+      langsPicked.push(pickLang);
+    });
+
     $("#results").show();
     $(".coursesPicked").text(JSON.stringify(displayClasses(coursePicked)));
   });
