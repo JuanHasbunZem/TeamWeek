@@ -4,14 +4,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import './css/styles.css';
 
 
-let coursecheckbox = $("input.one[type='checkbox']");
-coursecheckbox.click(function(event) {
-  if (coursecheckbox.filter(":checked").length > 3) {
-    event.preventDefault();
-  }
-});
-
-$("#submitcourse").click(function(event) {
+$("#submitcourse").submit(function(event) {
   event.preventDefault();
   $("#catalog").hide();
   $("#submit").hide();

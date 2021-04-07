@@ -20,6 +20,10 @@ module.exports = {
       template: './src/index.html',
       inject: 'body'
     }),
+    new HtmlWebpackPlugin({
+      template: './src/confirmation.html',
+      inject: 'body'
+    }),
     new Dotenv()
   ],
   module: {
